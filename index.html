@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Envíos Express | Simulador de Envíos</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <nav>
+
+            <h1>Envíos Express</h1>
+
+            <div class="menu">
+
+                <a href="#inicio">Inicio</a>
+
+                <a href="#como-funciona">
+                    Cómo funciona
+                </a>
+
+                <a href="#simulador">
+                    Simulador
+                </a>
+
+                <a href="#procesos">
+                    Procesos
+                </a>
+
+                <a href="#contacto">
+                    Contacto
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main>
+
+
+        <!-- INICIO -->
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <p class="etiqueta">
+                    PROYECTO PERSONAL
+                </p>
+
+                <h2>
+                    Simulá tu envío
+                    de manera rápida y sencilla
+                </h2>
+
+                <p>
+                    Una propuesta de simulador de envíos
+                    inspirada en procesos de logística
+                    y comercio electrónico.
+                </p>
+
+                <a
+                    href="#simulador"
+                    class="boton"
+                >
+                    Simular envío
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- MULTIMEDIA / IMAGEN -->
+
+        <section class="multimedia">
+
+            <h2>
+                La logística detrás de cada envío
+            </h2>
+
+            <p>
+                Detrás de cada paquete existe un proceso
+                de recepción, clasificación, preparación
+                y despacho.
+            </p>
+
+
+            <!-- IMAGEN -->
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFPqwmtroXvuu0NckE-BP-0AJ_MoFEON1lkvKTN-eR1hiDBPyOYZzZ8dCb&s=10"
+                alt="Centro de distribución de Mercado Libre"
+                class="imagen-logistica"
+            >
+
+        </section>
+
+
+        <!-- CÓMO FUNCIONA -->
+
+        <section id="como-funciona">
+
+            <h2>
+                ¿Cómo funciona?
+            </h2>
+
+            <p>
+                El proceso logístico puede dividirse
+                en diferentes etapas.
+            </p>
+
+
+            <div class="procesos">
+
+
+                <article>
+
+                    <span class="numero">
+                        01
+                    </span>
+
+                    <h3>
+                        Recepción
+                    </h3>
+
+                    <p>
+                        El paquete ingresa al centro
+                        logístico para comenzar su proceso.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span class="numero">
+                        02
+                    </span>
+
+                    <h3>
+                        Clasificación
+                    </h3>
+
+                    <p>
+                        El envío es clasificado según
+                        su destino y características.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span class="numero">
+                        03
+                    </span>
+
+                    <h3>
+                        Preparación
+                    </h3>
+
+                    <p>
+                        El paquete es preparado para
+                        continuar hacia su destino.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span class="numero">
+                        04
+                    </span>
+
+                    <h3>
+                        Despacho
+                    </h3>
+
+                    <p>
+                        Finalmente, el paquete es
+                        despachado para su entrega.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- SIMULADOR -->
+
+        <section id="simulador">
+
+            <h2>
+                Simulador de envío
+            </h2>
+
+            <p>
+                Completá los siguientes datos para
+                simular un envío.
+            </p>
+
+
+            <form>
+
+
+                <!-- NOMBRE -->
+
+                <label for="nombre">
+                    Nombre
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingresá tu nombre"
+                    required
+                >
+
+
+                <!-- APELLIDO -->
+
+                <label for="apellido">
+                    Apellido
+                </label>
+
+                <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    placeholder="Ingresá tu apellido"
+                    required
+                >
+
+
+                <!-- EMAIL -->
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="ejemplo@gmail.com"
+                    required
+                >
+
+
+                <!-- TELÉFONO -->
+
+                <label for="telefono">
+                    Teléfono
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="11 1234-5678"
+                >
+
+
+                <!-- ORIGEN -->
+
+                <label for="origen">
+                    Ciudad de origen
+                </label>
+
+                <input
+                    type="text"
+                    id="origen"
+                    name="origen"
+                    placeholder="Ej: Buenos Aires"
+                    required
+                >
+
+
+                <!-- DESTINO -->
+
+                <label for="destino">
+                    Ciudad de destino
+                </label>
+
+                <input
+                    type="text"
+                    id="destino"
+                    name="destino"
+                    placeholder="Ej: Córdoba"
+                    required
+                >
+
+
+                <!-- CÓDIGO POSTAL -->
+
+                <label for="codigo-postal">
+                    Código postal
+                </label>
+
+                <input
+                    type="number"
+                    id="codigo-postal"
+                    name="codigo-postal"
+                    placeholder="Ej: 1414"
+                    required
+                >
+
+
+                <!-- PESO -->
+
+                <label for="peso">
+                    Peso del paquete (kg)
+                </label>
+
+                <input
+                    type="number"
+                    id="peso"
+                    name="peso"
+                    placeholder="Ej: 2"
+                    min="0"
+                    step="0.1"
+                    required
+                >
+
+
+                <!-- TIPO DE PAQUETE -->
+
+                <label for="paquete">
+                    Tipo de paquete
+                </label>
+
+                <select
+                    id="paquete"
+                    name="paquete"
+                    required
+                >
+
+                    <option value="">
+                        Seleccioná una opción
+                    </option>
+
+                    <option value="sobre">
+                        Sobre
+                    </option>
+
+                    <option value="pequeno">
+                        Paquete pequeño
+                    </option>
+
+                    <option value="mediano">
+                        Paquete mediano
+                    </option>
+
+                    <option value="grande">
+                        Paquete grande
+                    </option>
+
+                </select>
+
+
+                <!-- FECHA -->
+
+                <label for="fecha">
+                    Fecha de envío
+                </label>
+
+                <input
+                    type="date"
+                    id="fecha"
+                    name="fecha"
+                    required
+                >
+
+
+                <!-- TIPO DE ENVÍO -->
+
+                <fieldset>
+
+                    <legend>
+                        Tipo de envío
+                    </legend>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="envio"
+                            value="normal"
+                            checked
+                        >
+
+                        Envío estándar
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="envio"
+                            value="express"
+                        >
+
+                        Envío express
+
+                    </label>
+
+                </fieldset>
+
+
+                <!-- TÉRMINOS -->
+
+                <label class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        name="terminos"
+                        required
+                    >
+
+                    Acepto los términos y condiciones.
+
+                </label>
+
+
+                <!-- BOTÓN -->
+
+                <button type="submit">
+                    Simular envío
+                </button>
+
+
+            </form>
+
+        </section>
+
+
+        <!-- PROCESOS LOGÍSTICOS -->
+
+        <section id="procesos">
+
+            <h2>
+                Procesos logísticos
+            </h2>
+
+            <p>
+                Algunas de las principales etapas
+                presentes en una operación logística.
+            </p>
+
+
+            <div class="procesos">
+
+
+                <article>
+
+                    <h3>
+                        Inbound
+                    </h3>
+
+                    <p>
+                        Recepción y procesamiento de
+                        mercadería que ingresa al
+                        centro logístico.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        Cross Docking
+                    </h3>
+
+                    <p>
+                        Clasificación y transferencia
+                        de productos para agilizar
+                        su salida.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        Picking & Packing
+                    </h3>
+
+                    <p>
+                        Preparación y empaquetado de
+                        los productos antes del despacho.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        Outbound
+                    </h3>
+
+                    <p>
+                        Preparación final y salida
+                        de los paquetes hacia su destino.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- VIDEO FINAL -->
+
+        <section class="video-final">
+
+            <h2>
+                La logística detrás de cada envío
+            </h2>
+
+            <p>
+                Conocé más sobre el proceso logístico
+                detrás de cada envío.
+            </p>
+
+
+            <div class="video-container">
+
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/uLMtqjhL4xI"
+                    title="Video sobre logística"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer id="contacto">
+
+        <h2>
+            Envíos Express
+        </h2>
+
+        <p>
+            Proyecto académico y personal
+            desarrollado por Leo Florentín.
+        </p>
+
+        <p>
+            Este proyecto no representa oficialmente
+            a Mercado Libre ni a Mercado Envíos.
+        </p>
+
+        <p>
+            © 2026 Leo Florentín
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

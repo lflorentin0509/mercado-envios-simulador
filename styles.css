@@ -1,0 +1,638 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ENCABEZADO / NAVBAR
+========================= */
+
+header {
+    background-color: #ffe600;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+    color: #222;
+}
+
+nav div {
+    display: flex;
+
+    gap: 25px;
+}
+
+nav a {
+    color: #222;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #555;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("https://images.prismic.io/careers-meli-staging/1ygQePCrHGA9Cixq_2_esp.png?auto=format%2Ccompress&w=1600&q=70");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+.hero > div {
+    max-width: 1100px;
+
+    width: 100%;
+
+    margin: auto;
+
+    padding: 40px 25px;
+}
+
+.hero p:first-child {
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    max-width: 700px;
+
+    font-size: 52px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 600px;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTÓN PRINCIPAL
+========================= */
+
+.boton {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background-color: #ffe600;
+
+    color: #222;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #ffd900;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+section:not(.hero) {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 90px 25px;
+}
+
+section h2 {
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+section > p {
+    color: #666;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   IMAGEN / MULTIMEDIA
+========================= */
+
+.multimedia {
+    text-align: center;
+}
+
+.multimedia h2 {
+    margin-bottom: 15px;
+}
+
+.multimedia p {
+    max-width: 700px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.multimedia img {
+    display: block;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    margin: 25px auto 0;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   TARJETAS DE PROCESOS
+========================= */
+
+.procesos {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.procesos article {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.procesos article:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.procesos h3 {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+.procesos p {
+    color: #666;
+}
+
+
+/* =========================
+   NÚMEROS DE LAS ETAPAS
+========================= */
+
+.numero {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #777;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+form {
+    max-width: 700px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form input[type="date"],
+form select {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    background-color: white;
+
+    transition: 0.2s;
+}
+
+form input:focus,
+form select:focus {
+
+    outline: none;
+
+    border-color: #888;
+
+    box-shadow:
+        0 0 0 2px rgba(255, 230, 0, 0.25);
+}
+
+
+/* =========================
+   FIELDSET / RADIO
+========================= */
+
+fieldset {
+    border: none;
+
+    margin-top: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+fieldset legend {
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+fieldset label {
+    font-weight: normal;
+
+    margin-top: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.checkbox {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+.checkbox input {
+    width: 16px;
+
+    height: 16px;
+}
+
+
+/* =========================
+   BOTÓN DEL FORMULARIO
+========================= */
+
+button {
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #ffe600;
+
+    color: #222;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffd900;
+
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-final {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 90px 25px;
+
+    text-align: center;
+}
+
+.video-final h2 {
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+.video-final p {
+    color: #666;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   CONTENEDOR DEL VIDEO
+========================= */
+
+.video-container {
+    width: 100%;
+
+    max-width: 900px;
+
+    aspect-ratio: 16 / 9;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background-color: #000;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   IFRAME DE YOUTUBE
+========================= */
+
+.video-container iframe {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    border: none;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #aaa;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav div {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .procesos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 500px) {
+
+    nav h1 {
+        font-size: 21px;
+    }
+
+    nav div {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section:not(.hero) {
+        padding: 60px 20px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .procesos {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .multimedia img {
+        height: 280px;
+    }
+
+    .video-final {
+        padding: 60px 20px;
+    }
+
+    .video-final h2 {
+        font-size: 28px;
+    }
+
+}
